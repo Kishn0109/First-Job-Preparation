@@ -1,0 +1,5 @@
+how to add css in html
+1->In-line 
+2->Inside 
+3->externals
+what is css selector->css selctor use to select particular tag
