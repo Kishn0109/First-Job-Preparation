@@ -1,0 +1,6 @@
+css->Cascading style sheet
+smallest unit of display is known as pixal
+scss allow to use variable
+*framworks-bootstrap,telwind css provide pridefined css
+Inline-in same line ex-span a input 
+block-It is not in same line ex-heading
