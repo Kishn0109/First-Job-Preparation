@@ -36,14 +36,17 @@ body {
   background-color: lightgreen;
   /* border-radius: 0.2rem; */
 }
-.PriorityColor.pink {
+.green {
+  background-color: lightgreen;
+}
+.pink {
   background-color: lightpink;
   border: 2px solid white;
 }
-.PriorityColor.blue {
+.blue {
   background-color: lightblue;
 }
-.PriorityColor.black {
+.black {
   background-color: rgb(15, 14, 15);
 }
 
@@ -51,7 +54,10 @@ body {
   width: 30rem;
   height: 15rem;
   display: flex;
-  /* background-color: green; */
+  position: absolute;
+  top: calc((100vh - 15rem) / 2);
+  left: calc((100vw - 30rem) / 2);
+  display: none;
 }
 .choseColor {
   display: flex;
@@ -66,7 +72,7 @@ body {
 .choseColor > * {
   width: 100px;
   height: 50px;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 .choseColor.colorDiv {
 }
@@ -75,6 +81,11 @@ body {
   width: 70%;
   height: 100%;
   background-color: red;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.2rem;
 }
 .toolbar-actionButton {
   display: flex;
@@ -92,4 +103,36 @@ body {
 .toolbar-actionButton > * {
   font-size: 2rem;
   border-radius: 0.2rem;
+}
+.toolbar-actionButton > *:hover {
+  /* background-color: rgba(63, 62, 62, 0.795); */
+  transition: 0.5s ease-in;
+  color: whitesmoke;
+}
+.active {
+  border: 2px solid red;
+}
+.ticket-main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.ticket {
+  width: 15rem;
+  height: 10rem;
+  background-color: lightgreen;
+}
+.ticket .top-color {
+  height: 15%;
+  background-color: lightslategrey;
+}
+.ticket .ticket-id {
+  height: 15%;
+  background-color: lightskyblue;
+}
+.ticket-contant {
+  padding: 0.3rem;
 }
