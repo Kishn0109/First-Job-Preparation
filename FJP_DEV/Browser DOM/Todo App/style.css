@@ -41,7 +41,7 @@ body {
 }
 .pink {
   background-color: lightpink;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 .blue {
   background-color: lightblue;
@@ -127,7 +127,7 @@ body {
 }
 .ticket .top-color {
   height: 15%;
-  background-color: lightslategrey;
+  /* background-color: lightslategrey; */
 }
 .ticket .ticket-id {
   height: 15%;
