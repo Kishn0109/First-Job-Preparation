@@ -1,0 +1,46 @@
+<!-- //render methode for rendering we can use it by react-dom -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div class="root"></div>
+  </body>
+  <script type="text/babel">
+    //   bable or webpack or swc type transpiler script ->which transpile JSX into pure javaScript
+    // let root = document.querySelector(".root");
+    // let h1 = document.createElement("h1");
+    // h1.innerText = "karan";
+    // root.append(h1);
+    // React.createElement ->create elment
+    //ReactDom.render(v1,v2) v1->kise render krna hai and function must be in the form of Element ,v2->kisme render krna hai
+
+    function Element() {
+      return <h1>karan</h1>; //<></> It is a react-fragment and Attributes in react-component is known as props
+    }
+    function Main() {
+      return (
+        <div>
+          <Element />
+          <Element />
+        </div>
+      );
+    }
+    ReactDOM.render(<Main />, document.querySelector(".root"));
+  </script>
+
+  <!-- //Beble->convert jsx into js to make browser understant  -->
+</html>
