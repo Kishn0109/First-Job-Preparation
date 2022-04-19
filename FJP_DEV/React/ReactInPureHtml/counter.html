@@ -27,15 +27,15 @@
           count: 10,
         };
       }
-      increament = () => {
-        this.setState({
-          count: this.state.count + 1,
-        });
-      };
+
+      increament() {
+        console.log(this, "kadf"); //undefined
+        // this.setState({
+        //   count: this.state.count + 1,
+        // });
+      }
       decreacment = () => {
-        this.setState({
-          count: this.state.count - 1,
-        });
+        console.log(this);
       };
       render() {
         return (

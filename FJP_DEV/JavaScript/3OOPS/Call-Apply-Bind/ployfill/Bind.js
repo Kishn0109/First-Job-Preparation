@@ -14,6 +14,6 @@ Function.prototype.mybind = function (...args) {
     }
     return ans;
 }
-
+     
 const bindgiv = mytry.mybind(1);
 bindgiv();

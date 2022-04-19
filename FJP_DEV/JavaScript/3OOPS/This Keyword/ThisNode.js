@@ -4,7 +4,7 @@
 
 // case2
 // function fn() {
-//     console.log(this)
+//     console.log(this) //global
 // }
 // fn()
 

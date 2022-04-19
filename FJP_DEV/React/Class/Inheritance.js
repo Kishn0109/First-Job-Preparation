@@ -12,7 +12,7 @@ class Teacher extends Person {
         // this.name = name;
         // this.color = color;before 
         // after 
-        super(name, color) //It is a keyword
+        // super(name, color) //It is a keyword
         this.salary = salary;
     }
 
@@ -44,8 +44,8 @@ class Student extends Person {
 }
 let person1 = new Person("Adam", 25);
 
-// let techer = new Teacher("name", "white", 239);
+let techer = new Teacher("name", "white", 239);
 let student2 = new Student("Mark", 21, 8.0);
 // let truedent = new Student("name", "white", 239);
-console.log(student2.hello())
+console.log(techer)
 // console.log(student1.welcome())
