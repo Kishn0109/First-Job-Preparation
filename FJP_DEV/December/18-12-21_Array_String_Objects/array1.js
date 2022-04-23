@@ -1,4 +1,4 @@
-// Array contigous block of memory if consists n,s,boolean,null,undefined
+// Array contigous block of memory it consists n,s,boolean,null,undefined
 // cars[8] = "value"; //update
 // cars.shift();
 // cars.unshift("value");
