@@ -22,7 +22,7 @@ export default class Todo extends Component {
     }
     handelDelelte = (id) => {
         this.setState({
-            tasks: [...this.state.tasks.filter((taskobj) => taskobj.id != id)]
+            tasks: [...this.state.tasks.filter((taskobj) => taskobj.id !== id)]
         })
     }
     render() {
@@ -38,7 +38,6 @@ export default class Todo extends Component {
                             <li>
                                 <p>{taskobj.task}</p>
                                 <button onClick={() => this.handelDelelte(taskobj.id)}>Delete</button>
-
                             </li>
                         ))
                     }
