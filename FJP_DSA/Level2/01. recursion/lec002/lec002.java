@@ -12,8 +12,8 @@ class lec002 {
         }
         return ans;
     }
-    
-    public static int coincombinationinfinite(int target, int[] coins, String asf,int idx) {
+
+    public static int coincombinationinfinite(int target, int[] coins, String asf, int idx) {
         if (target == 0) {
             System.out.println(asf);
             return 1;
@@ -21,13 +21,13 @@ class lec002 {
         int ans = 0;
         for (int i = idx; i < coins.length; i++) {
             if (target - coins[i] >= 0) {
-                ans += coincombinationinfinite(target - coins[i], coins, asf + coins[i],i);
+                ans += coincombinationinfinite(target - coins[i], coins, asf + coins[i], i);
             }
         }
         return ans;
     }
-    
-    public static int permutationSinglechoice(int target, int[] coins, String asf, int idx,boolean [] vis) {
+
+    public static int permutationSinglechoice(int target, int[] coins, String asf, int idx, boolean[] vis) {
         if (target == 0) {
             System.out.println(asf);
             return 1;
@@ -57,14 +57,13 @@ class lec002 {
         return count;
     }
 
-
     public static void main(String[] args) {
-     int target=10;
-     int [] coins={2,3,5,7};
-    //  boolean [] vis=new boolean[coins.length];
-    //  int ans = permutation(target, coins, "");
-    //  int combinations= permutationSinglechoice(target, coins, "", 0,vis);
-     int combinations= combination_SingleChoice(target, coins, "", 0);
-     System.out.println("combinations "+combinations+" ");
- }
+        int target = 10;
+        int[] coins = { 2, 3, 5, 7 };
+        // boolean [] vis=new boolean[coins.length];
+        // int ans = permutation(target, coins, "");
+        // int combinations= permutationSinglechoice(target, coins, "", 0,vis);
+        int combinations = combination_SingleChoice(target, coins, "", 0);
+        System.out.println("combinations " + combinations + " ");
+    }
 }
